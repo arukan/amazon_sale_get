@@ -4,8 +4,7 @@ class BaseRequest
     DEFAULT_PARAMS = {
       Service: 'AWSECommerceService',
       AWSAccessKeyId: ENV['AWS_ACCESS_KEY_ID'],
-      AssociateTag: ENV['ASSOCIATE_TAG'],
-      Timestamp: Time.now.gmtime.iso8601
+      AssociateTag: ENV['ASSOCIATE_TAG']
     }.freeze
 
     def canonical_query_string

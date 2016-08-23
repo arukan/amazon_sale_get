@@ -19,6 +19,7 @@ class ItemSearch < BaseRequest
 
     def params
       DEFAULT_PARAMS.merge(
+        Timestamp: Time.now.gmtime.iso8601,
         BrowseNode: @browse_node_id,
         ItemPage: @page_no,
         Operation: 'ItemSearch',
