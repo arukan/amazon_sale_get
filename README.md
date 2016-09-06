@@ -9,4 +9,4 @@ $ bundle
 
 ## Usage
 
-$ ruby sales_info.rb
+$ bundle exec ruby main.rb
